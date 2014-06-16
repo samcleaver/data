@@ -407,7 +407,7 @@ var Model = Ember.Object.extend(Ember.Evented, {
     @type {Object}
   */
   data: Ember.computed(function() {
-    this._data = this._data || {};
+    this.set('_data', this._data || {});
     return this._data;
   }).readOnly(),
 
